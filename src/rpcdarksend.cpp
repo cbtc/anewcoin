@@ -86,7 +86,7 @@ Value darksend(const Array& params, bool fHelp)
             "<amount> is type \"real\" and will be rounded to the nearest 0.1"
             + HelpRequiringPassphrase());
 
-    CHarvestcoinAddress address(params[0].get_str());
+    CSeacoinAddress address(params[0].get_str());
     if (!address.IsValid())
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Harvest address");
 
@@ -508,7 +508,7 @@ Value masternode(const Array& params, bool fHelp)
             pubkey.SetDestination(winner->pubkey.GetID());
             CTxDestination address1;
             ExtractDestination(pubkey, address1);
-            CHarvestcoinAddress address2(address1);
+            CSeacoinAddress address2(address1);
 
             obj.push_back(Pair("IP:port",       winner->addr.ToString().c_str()));
             obj.push_back(Pair("protocol",      (int64_t)winner->protocolVersion));
@@ -527,7 +527,7 @@ Value masternode(const Array& params, bool fHelp)
         CKey secret;
         secret.MakeNewKey(false);
 
-        return CHarvestcoinSecret(secret).ToString();
+        return CSeacoinSecret(secret).ToString();
     }
 
     if (strCommand == "winners")
@@ -544,7 +544,7 @@ Value masternode(const Array& params, bool fHelp)
             if(masternodePayments.GetBlockPayee(nHeight, payee, vin)){
                 CTxDestination address1;
                 ExtractDestination(payee, address1);
-                CHarvestcoinAddress address2(address1);
+                CSeacoinAddress address2(address1);
 
                 if(strMode == "addr")
                     obj.push_back(Pair(boost::lexical_cast<std::string>(nHeight),       address2.ToString().c_str()));
@@ -734,7 +734,7 @@ Value masternode(const Array& params, bool fHelp)
         pubkey = GetScriptForDestination(activeMasternode.pubKeyMasternode.GetID());
         CTxDestination address1;
         ExtractDestination(pubkey, address1);
-        CHarvestcoinAddress address2(address1);
+        CSeacoinAddress address2(address1);
 
         Object mnObj;
         mnObj.push_back(Pair("vin", activeMasternode.vin.ToString().c_str()));
@@ -799,7 +799,7 @@ Value masternodelist(const Array& params, bool fHelp)
             } else if (strMode == "reward") {
                 CTxDestination address1;
                 ExtractDestination(mn.rewardAddress, address1);
-                CHarvestcoinAddress address2(address1);
+                CSeacoinAddress address2(address1);
 
                 if(strFilter !="" && address2.ToString().find(strFilter) == string::npos &&
                     strVin.find(strFilter) == string::npos) continue;
@@ -817,7 +817,7 @@ Value masternodelist(const Array& params, bool fHelp)
                 pubkey.SetDestination(mn.pubkey.GetID());
                 CTxDestination address1;
                 ExtractDestination(pubkey, address1);
-                CHarvestcoinAddress address2(address1);
+                CSeacoinAddress address2(address1);
 
                 std::ostringstream addrStream;
                 addrStream << setw(21) << strVin;
@@ -848,7 +848,7 @@ Value masternodelist(const Array& params, bool fHelp)
                 pubkey.SetDestination(mn.pubkey.GetID());
                 CTxDestination address1;
                 ExtractDestination(pubkey, address1);
-                CHarvestcoinAddress address2(address1);
+                CSeacoinAddress address2(address1);
 
                 if(strFilter !="" && address2.ToString().find(strFilter) == string::npos &&
                     strVin.find(strFilter) == string::npos) continue;

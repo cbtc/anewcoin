@@ -368,7 +368,7 @@ ReadKeyValue(CWallet* pwallet, CDataStream& ssKey, CDataStream& ssValue,
         {
             string strAddress;
             ssKey >> strAddress;
-            ssValue >> pwallet->mapAddressBook[CHarvestcoinAddress(strAddress).Get()];
+            ssValue >> pwallet->mapAddressBook[CSeacoinAddress(strAddress).Get()];
         }
         else if (strType == "tx")
         {

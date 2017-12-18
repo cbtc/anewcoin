@@ -407,7 +407,7 @@ void CDarksendPool::SetNull(){
 }
 
 bool CDarksendPool::SetCollateralAddress(std::string strAddress){
-    CHarvestcoinAddress address;
+    CSeacoinAddress address;
     if (!address.SetString(strAddress))
     {
         LogPrintf("CDarksendPool::SetCollateralAddress - Invalid DarkSend collateral address\n");
@@ -2110,7 +2110,7 @@ bool CDarkSendSigner::IsVinAssociatedWithPubkey(CTxIn& vin, CPubKey& pubkey){
 }
 
 bool CDarkSendSigner::SetKey(std::string strSecret, std::string& errorMessage, CKey& key, CPubKey& pubkey){
-    CHarvestcoinSecret vchSecret;
+    CSeacoinSecret vchSecret;
     bool fGood = vchSecret.SetString(strSecret);
 
     if (!fGood) {
