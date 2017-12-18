@@ -2691,7 +2691,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or Harvestd</source>
+        <source>Send command to -server or Sead</source>
         <translation>Pošlji ukaz na -server ali blackoind</translation>
     </message>
     <message>
@@ -2716,7 +2716,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: Harvestd.pid)</source>
+        <source>Specify pid file (default: Sead.pid)</source>
         <translation>Določi pid datoteko (privzeto: Harvest.pid)</translation>
     </message>
     <message>

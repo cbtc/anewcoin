@@ -2693,8 +2693,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or Harvestd</source>
-        <translation>Send kommando til-server eller Harvestd</translation>
+        <source>Send command to -server or Sead</source>
+        <translation>Send kommando til-server eller Sead</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2718,8 +2718,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: Harvestd.pid)</source>
-        <translation>Angiv pid fil (standard: Harvestd.pid)</translation>
+        <source>Specify pid file (default: Sead.pid)</source>
+        <translation>Angiv pid fil (standard: Sead.pid)</translation>
     </message>
     <message>
         <location line="+2"/>

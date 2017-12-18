@@ -2693,8 +2693,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or Harvestd</source>
-        <translation>Skicka kommando till -server eller Harvestd</translation>
+        <source>Send command to -server or Sead</source>
+        <translation>Skicka kommando till -server eller Sead</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2718,8 +2718,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: Harvestd.pid)</source>
-        <translation>Ange pid filen (standard Harvestd.pid)</translation>
+        <source>Specify pid file (default: Sead.pid)</source>
+        <translation>Ange pid filen (standard Sead.pid)</translation>
     </message>
     <message>
         <location line="+2"/>

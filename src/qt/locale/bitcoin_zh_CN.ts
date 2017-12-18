@@ -2691,8 +2691,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or Harvestd</source>
-        <translation>向-server服务器或Harvestd发送命令</translation>
+        <source>Send command to -server or Sead</source>
+        <translation>向-server服务器或Sead发送命令</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2719,8 +2719,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: Harvestd.pid)</source>
-        <translation>指定pid文件(默认: Harvestd.pid)</translation>
+        <source>Specify pid file (default: Sead.pid)</source>
+        <translation>指定pid文件(默认: Sead.pid)</translation>
     </message>
     <message>
         <location line="+2"/>

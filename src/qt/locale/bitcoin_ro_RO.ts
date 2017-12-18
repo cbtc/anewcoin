@@ -2693,8 +2693,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or Harvestd</source>
-        <translation>Trimite comanda catre server sau Harvestd</translation>
+        <source>Send command to -server or Sead</source>
+        <translation>Trimite comanda catre server sau Sead</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2718,7 +2718,7 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: Harvestd.pid)</source>
+        <source>Specify pid file (default: Sead.pid)</source>
         <translation>Speficica fisier pid(implicit: Harvest.pid)</translation>
     </message>
     <message>

@@ -2689,8 +2689,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or Harvestd</source>
-        <translation>Enviar comandes a -server o Harvestd</translation>
+        <source>Send command to -server or Sead</source>
+        <translation>Enviar comandes a -server o Sead</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2714,8 +2714,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: Harvestd.pid)</source>
-        <translation>Especificar arxiu pid (per defecte: Harvestd.pid)</translation>
+        <source>Specify pid file (default: Sead.pid)</source>
+        <translation>Especificar arxiu pid (per defecte: Sead.pid)</translation>
     </message>
     <message>
         <location line="+2"/>

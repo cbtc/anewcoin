@@ -54,10 +54,10 @@ bool AppInit(int argc, char* argv[])
             // First part of help message is specific to bitcoind / RPC client
             std::string strUsage = _("Harvest version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  Harvestd [options]                     " + "\n" +
-                  "  Harvestd [options] <command> [params]  " + _("Send command to -server or Harvestd") + "\n" +
-                  "  Harvestd [options] help                " + _("List commands") + "\n" +
-                  "  Harvestd [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  Sead [options]                     " + "\n" +
+                  "  Sead [options] <command> [params]  " + _("Send command to -server or Sead") + "\n" +
+                  "  Sead [options] help                " + _("List commands") + "\n" +
+                  "  Sead [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage();
 

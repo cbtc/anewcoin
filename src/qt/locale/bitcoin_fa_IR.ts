@@ -2675,7 +2675,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or Harvestd</source>
+        <source>Send command to -server or Sead</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2700,7 +2700,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: Harvestd.pid)</source>
+        <source>Specify pid file (default: Sead.pid)</source>
         <translation type="unfinished"/>
     </message>
     <message>

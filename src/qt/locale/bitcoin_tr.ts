@@ -2698,8 +2698,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or Harvestd</source>
-        <translation>-sunucu veya Harvestd&apos;ye komut gönder</translation>
+        <source>Send command to -server or Sead</source>
+        <translation>-sunucu veya Sead&apos;ye komut gönder</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2723,7 +2723,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: Harvestd.pid)</source>
+        <source>Specify pid file (default: Sead.pid)</source>
         <translation>pid dosyasını belirt (varsayılan: Harvest.pid)</translation>
     </message>
     <message>

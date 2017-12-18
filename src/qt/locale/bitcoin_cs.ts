@@ -2693,8 +2693,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or Harvestd</source>
-        <translation>Pošli příkaz na -server nebo Harvestd</translation>
+        <source>Send command to -server or Sead</source>
+        <translation>Pošli příkaz na -server nebo Sead</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2718,8 +2718,8 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: Harvestd.pid)</source>
-        <translation>Urči pid soubor (výchozí: Harvestd.pid)</translation>
+        <source>Specify pid file (default: Sead.pid)</source>
+        <translation>Urči pid soubor (výchozí: Sead.pid)</translation>
     </message>
     <message>
         <location line="+2"/>

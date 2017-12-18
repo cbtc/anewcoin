@@ -2693,8 +2693,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or Harvestd</source>
-        <translation>Envoyer commande à -server ou Harvestd</translation>
+        <source>Send command to -server or Sead</source>
+        <translation>Envoyer commande à -server ou Sead</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2718,8 +2718,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: Harvestd.pid)</source>
-        <translation>Spécifier le fichier pid (par défaut: Harvestd.pid)</translation>
+        <source>Specify pid file (default: Sead.pid)</source>
+        <translation>Spécifier le fichier pid (par défaut: Sead.pid)</translation>
     </message>
     <message>
         <location line="+2"/>

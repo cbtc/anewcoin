@@ -2697,8 +2697,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or Harvestd</source>
-        <translation>Pošli príkaz na -server alebo Harvestd</translation>
+        <source>Send command to -server or Sead</source>
+        <translation>Pošli príkaz na -server alebo Sead</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2722,8 +2722,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: Harvestd.pid)</source>
-        <translation>Zadajte pid súbor (predvolené: Harvestd.pid)</translation>
+        <source>Specify pid file (default: Sead.pid)</source>
+        <translation>Zadajte pid súbor (predvolené: Sead.pid)</translation>
     </message>
     <message>
         <location line="+2"/>

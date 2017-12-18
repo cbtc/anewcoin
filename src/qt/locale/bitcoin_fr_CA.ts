@@ -2693,8 +2693,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or Harvestd</source>
-        <translation>Envoyer commande à -server ou Harvestd</translation>
+        <source>Send command to -server or Sead</source>
+        <translation>Envoyer commande à -server ou Sead</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2718,8 +2718,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: Harvestd.pid)</source>
-        <translation>Spécifier le fichier pid (defaut: Harvestd.pid)
+        <source>Specify pid file (default: Sead.pid)</source>
+        <translation>Spécifier le fichier pid (defaut: Sead.pid)
 </translation>
     </message>
     <message>

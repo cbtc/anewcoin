@@ -2693,8 +2693,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or Harvestd</source>
-        <translation>Verstuur commando naar -server of Harvestd</translation>
+        <source>Send command to -server or Sead</source>
+        <translation>Verstuur commando naar -server of Sead</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2718,7 +2718,7 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: Harvestd.pid)</source>
+        <source>Specify pid file (default: Sead.pid)</source>
         <translation>Selecteer pid bestand (standaard: Harvest.conf)</translation>
     </message>
     <message>

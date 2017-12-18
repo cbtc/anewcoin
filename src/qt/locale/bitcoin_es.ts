@@ -2693,8 +2693,8 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or Harvestd</source>
-        <translation>Envía un comando a -server o Harvestd</translation>
+        <source>Send command to -server or Sead</source>
+        <translation>Envía un comando a -server o Sead</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2721,8 +2721,8 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: Harvestd.pid)</source>
-        <translation>Especifica un archivo pid (por defecto: Harvestd.pid)</translation>
+        <source>Specify pid file (default: Sead.pid)</source>
+        <translation>Especifica un archivo pid (por defecto: Sead.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
