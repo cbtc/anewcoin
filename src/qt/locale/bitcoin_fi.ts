@@ -1736,8 +1736,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 HC</source>
-        <translation>123.456 HC {0.00 ?}</translation>
+        <source>0.00 SEA</source>
+        <translation>123.456 SEA {0.00 ?}</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -1806,8 +1806,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 HC</source>
-        <translation>123.456 HC</translation>
+        <source>123.456 SEA</source>
+        <translation>123.456 SEA</translation>
     </message>
     <message>
         <location line="+31"/>

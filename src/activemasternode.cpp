@@ -9,7 +9,7 @@
 #include "clientversion.h"
 
 //
-// Bootup the masternode, look for a 500 HC input and register on the network
+// Bootup the masternode, look for a 500 SEA input and register on the network
 //
 void CActiveMasternode::ManageStatus()
 {
