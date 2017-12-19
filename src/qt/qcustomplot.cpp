@@ -3281,7 +3281,7 @@ void QCPLayoutInset::setInsetPlacement(int index, QCPLayoutInset::InsetPlacement
   is used to set the alignment of the element with the specified \a index to \a alignment.
   
   \a alignment is an or combination of the following alignment flags: Qt::AlignLeft,
-  Qt::AlignSEAenter, Qt::AlighRight, Qt::AlignTop, Qt::AlignVCenter, Qt::AlignBottom. Any other
+  Qt::AlignHCenter, Qt::AlighRight, Qt::AlignTop, Qt::AlignVCenter, Qt::AlignBottom. Any other
   alignment flags will be ignored.
 */
 void QCPLayoutInset::setInsetAlignment(int index, Qt::Alignment alignment)
@@ -3344,7 +3344,7 @@ void QCPLayoutInset::updateLayout()
       Qt::Alignment al = mInsetAlignment.at(i);
       if (al.testFlag(Qt::AlignLeft)) insetRect.moveLeft(rect().x());
       else if (al.testFlag(Qt::AlignRight)) insetRect.moveRight(rect().x()+rect().width());
-      else insetRect.moveLeft(rect().x()+rect().width()*0.5-finalMinSize.width()*0.5); // default to Qt::AlignSEAenter
+      else insetRect.moveLeft(rect().x()+rect().width()*0.5-finalMinSize.width()*0.5); // default to Qt::AlignHCenter
       if (al.testFlag(Qt::AlignTop)) insetRect.moveTop(rect().y());
       else if (al.testFlag(Qt::AlignBottom)) insetRect.moveBottom(rect().y()+rect().height());
       else insetRect.moveTop(rect().y()+rect().height()*0.5-finalMinSize.height()*0.5); // default to Qt::AlignVCenter
@@ -3436,7 +3436,7 @@ double QCPLayoutInset::selectTest(const QPointF &pos, bool onlySelectable, QVari
   alignment.
   
   \a alignment is an or combination of the following alignment flags: Qt::AlignLeft,
-  Qt::AlignSEAenter, Qt::AlighRight, Qt::AlignTop, Qt::AlignVCenter, Qt::AlignBottom. Any other
+  Qt::AlignHCenter, Qt::AlighRight, Qt::AlignTop, Qt::AlignVCenter, Qt::AlignBottom. Any other
   alignment flags will be ignored.
   
   \see addElement(QCPLayoutElement *element, const QRectF &rect)
@@ -6433,7 +6433,7 @@ int QCPAxisPainterPrivate::size() const
   {
     QFontMetrics fontMetrics(labelFont);
     QRect bounds;
-    bounds = fontMetrics.boundingRect(0, 0, 0, 0, Qt::TextDontClip | Qt::AlignSEAenter | Qt::AlignVCenter, label);
+    bounds = fontMetrics.boundingRect(0, 0, 0, 0, Qt::TextDontClip | Qt::AlignHCenter | Qt::AlignVCenter, label);
     result += bounds.height() + labelPadding;
   }
   
@@ -6595,7 +6595,7 @@ void QCPAxisPainterPrivate::drawTickLabel(QCPPainter *painter, double x, double 
   } else
   {
     painter->setFont(labelData.baseFont);
-    painter->drawText(0, 0, labelData.totalBounds.width(), labelData.totalBounds.height(), Qt::TextDontClip | Qt::AlignSEAenter, labelData.basePart);
+    painter->drawText(0, 0, labelData.totalBounds.width(), labelData.totalBounds.height(), Qt::TextDontClip | Qt::AlignHCenter, labelData.basePart);
   }
   
   // reset painter settings to what it was before:
@@ -6654,7 +6654,7 @@ QCPAxisPainterPrivate::TickLabelData QCPAxisPainterPrivate::getTickLabelData(con
   } else // useBeautifulPowers == false
   {
     result.basePart = text;
-    result.totalBounds = QFontMetrics(result.baseFont).boundingRect(0, 0, 0, 0, Qt::TextDontClip | Qt::AlignSEAenter, result.basePart);
+    result.totalBounds = QFontMetrics(result.baseFont).boundingRect(0, 0, 0, 0, Qt::TextDontClip | Qt::AlignHCenter, result.basePart);
   }
   result.totalBounds.moveTopLeft(QPoint(0, 0)); // want bounding box aligned top left at origin, independent of how it was created, to make further processing simpler
   
@@ -22397,7 +22397,7 @@ QCPItemText::QCPItemText(QCustomPlot *parentPlot) :
   position->setCoords(0, 0);
   
   setRotation(0);
-  setTextAlignment(Qt::AlignTop|Qt::AlignSEAenter);
+  setTextAlignment(Qt::AlignTop|Qt::AlignHCenter);
   setPositionAlignment(Qt::AlignCenter);
   setText("text");
   
@@ -22508,7 +22508,7 @@ void QCPItemText::setText(const QString &text)
   Sets which point of the text rect shall be aligned with \a position.
   
   Examples:
-  \li If \a alignment is <tt>Qt::AlignSEAenter | Qt::AlignTop</tt>, the text will be positioned such
+  \li If \a alignment is <tt>Qt::AlignHCenter | Qt::AlignTop</tt>, the text will be positioned such
   that the top of the text rect will be horizontally centered on \a position.
   \li If \a alignment is <tt>Qt::AlignLeft | Qt::AlignBottom</tt>, \a position will indicate the
   bottom left corner of the text rect.
@@ -22651,7 +22651,7 @@ QPointF QCPItemText::getTextDrawPoint(const QPointF &pos, const QRectF &rect, Qt
     return pos;
   
   QPointF result = pos; // start at top left
-  if (positionAlignment.testFlag(Qt::AlignSEAenter))
+  if (positionAlignment.testFlag(Qt::AlignHCenter))
     result.rx() -= rect.width()/2.0;
   else if (positionAlignment.testFlag(Qt::AlignRight))
     result.rx() -= rect.width();
