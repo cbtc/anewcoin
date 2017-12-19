@@ -836,7 +836,7 @@
           <string>Select a peer to view detailed information.</string>
          </property>
          <property name="alignment">
-          <set>Qt::AlignSEAenter|Qt::AlignTop</set>
+          <set>Qt::AlignHCenter|Qt::AlignTop</set>
          </property>
          <property name="wordWrap">
           <bool>true</bool>
