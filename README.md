@@ -1,7 +1,7 @@
 
-Harvest development tree
+Sea development tree
 
-Harvest is a PoS-based cryptocurrency.
+Sea is a PoS-based cryptocurrency.
 
 SEA is dependent upon libsecp256k1 by sipa, the sources for which can be found here:
 https://github.com/bitcoin/secp256k1

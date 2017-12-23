@@ -782,7 +782,7 @@ WalletModel::UnlockContext::~UnlockContext()
 
 void WalletModel::UnlockContext::CopyFrom(const UnlockContext& rhs)
 {
-    // Harvest context; old object no longer relocks wallet
+    // Sea context; old object no longer relocks wallet
     *this = rhs;
     rhs.relock = false;
 }

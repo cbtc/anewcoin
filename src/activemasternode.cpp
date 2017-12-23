@@ -96,7 +96,7 @@ void CActiveMasternode::ManageStatus()
             	return;
             }
 
-            /* rewards are not supported in Harvest.conf */
+            /* rewards are not supported in Sea.conf */
             CScript rewardAddress = CScript();
             int rewardPercentage = 0;
 

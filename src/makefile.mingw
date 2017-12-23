@@ -10,15 +10,15 @@ BOOST_SUFFIX?=-mgw49-mt-s-1_57
 
 INCLUDEPATHS= \
  -I"$(CURDIR)" \
- -I"d:/project/Harvest/include/boost-1_57" \
- -I"d:/project/Harvest/include/miniupnpc" \
- -I"d:/project/Harvest/include" \
- -I"d:/project/Harvest"
+ -I"d:/project/Sea/include/boost-1_57" \
+ -I"d:/project/Sea/include/miniupnpc" \
+ -I"d:/project/Sea/include" \
+ -I"d:/project/Sea"
 
 LIBPATHS= \
  -L"$(CURDIR)/leveldb" \
- -L"d:/project/Harvest/lib" \
- -L"d:/project/Harvest"
+ -L"d:/project/Sea/lib" \
+ -L"d:/project/Sea"
 
 LIBS= \
  -l leveldb \

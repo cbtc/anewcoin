@@ -66,13 +66,13 @@ void OptionsModel::Init()
     if (!settings.contains("nDarksendRounds"))
         settings.setValue("nDarksendRounds", 2);
     nDarksendRounds = settings.value("nDarksendRounds").toLongLong();
-    if (!settings.contains("nAnonymizeHarvestAmount"))
-        settings.setValue("nAnonymizeHarvestAmount", 1000);
-    nAnonymizeHarvestAmount = settings.value("nAnonymizeHarvestAmount").toLongLong();
+    if (!settings.contains("nAnonymizeSeaAmount"))
+        settings.setValue("nAnonymizeSeaAmount", 1000);
+    nAnonymizeSeaAmount = settings.value("nAnonymizeSeaAmount").toLongLong();
     if (settings.contains("nDarksendRounds"))
         SoftSetArg("-darksendrounds", settings.value("nDarksendRounds").toString().toStdString());
-    if (settings.contains("nAnonymizeHarvestAmount"))
-        SoftSetArg("-anonymizetraveamount", settings.value("nAnonymizeHarvestAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeSeaAmount"))
+        SoftSetArg("-anonymizetraveamount", settings.value("nAnonymizeSeaAmount").toString().toStdString());
 
 
 
@@ -206,8 +206,8 @@ QVariant OptionsModel::data(const QModelIndex & index, int role) const
             return fCoinControlFeatures;
         case DarksendRounds:
             return QVariant(nDarksendRounds);
-        case AnonymizeHarvestAmount:
-            return QVariant(nAnonymizeHarvestAmount);
+        case AnonymizeSeaAmount:
+            return QVariant(nAnonymizeSeaAmount);
         case UseBlackTheme:
             return QVariant(fUseBlackTheme);
         default:
@@ -318,10 +318,10 @@ bool OptionsModel::setData(const QModelIndex & index, const QVariant & value, in
             settings.setValue("nDarksendRounds", nDarksendRounds);
             emit darksendRoundsChanged(nDarksendRounds);
             break;
-        case AnonymizeHarvestAmount:
-            nAnonymizeHarvestAmount = value.toInt();
-            settings.setValue("nAnonymizeHarvestAmount", nAnonymizeHarvestAmount);
-            emit AnonymizeHarvestAmountChanged(nAnonymizeHarvestAmount);
+        case AnonymizeSeaAmount:
+            nAnonymizeSeaAmount = value.toInt();
+            settings.setValue("nAnonymizeSeaAmount", nAnonymizeSeaAmount);
+            emit AnonymizeSeaAmountChanged(nAnonymizeSeaAmount);
             break;
         default:
             break;

@@ -3,27 +3,27 @@
 <plist version="0.9">
 <dict>
 	<key>CFBundleIconFile</key>
-	<string>Harvest.icns</string>
+	<string>Sea.icns</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleGetInfoString</key>
-	<string>Harvest-Qt</string>
+	<string>Sea-Qt</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleExecutable</key>
-	<string>Harvest-Qt</string>
+	<string>Sea-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>co.Harvest.Harvest-Qt</string>
+	<string>co.Sea.Sea-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>co.Harvest.HarvestPayment</string>
+            <string>co.Sea.SeaPayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
-              <string>Harvest</string>
+              <string>Sea</string>
             </array>
           </dict>
         </array>

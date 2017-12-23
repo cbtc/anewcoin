@@ -52,7 +52,7 @@ bool AppInit(int argc, char* argv[])
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
             // First part of help message is specific to bitcoind / RPC client
-            std::string strUsage = _("Harvest version") + " " + FormatFullVersion() + "\n\n" +
+            std::string strUsage = _("Sea version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
                   "  Sead [options]                     " + "\n" +
                   "  Sead [options] <command> [params]  " + _("Send command to -server or Sead") + "\n" +
@@ -67,7 +67,7 @@ bool AppInit(int argc, char* argv[])
 
         // Command-line RPC
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "Harvest:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "Sea:"))
                 fCommandLine = true;
 
         if (fCommandLine)
