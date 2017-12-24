@@ -1355,10 +1355,10 @@ static CBigNum GetProofOfStakeLimit(int nHeight)
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
 {
-    int64_t nSubsidy = 3.5 * COIN;
+    int64_t nSubsidy = 1.1 * COIN;
 	if (nHeight == 2)
 		 {
-		nSubsidy = 1972800 * COIN;
+		nSubsidy = 600000 * COIN;
 		}
 
     return nSubsidy + nFees;
