@@ -47,7 +47,7 @@ set<pair<COutPoint, unsigned int> > setStakeSeen;
 
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 
-unsigned int nStakeMinAge = 1 * 60 * 60; // 1 hour
+unsigned int nStakeMinAge = 16 * 60 * 60; // 16 hour
 unsigned int nModifierInterval = 8 * 60; // time to elapse before new modifier is computed
 
 int nCoinbaseMaturity = 45;
@@ -1360,7 +1360,14 @@ int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
 		 {
 		nSubsidy = 600000 * COIN;
 		}
-
+    if (nHeight>3)
+		 {
+		nSubsidy = 0 * COIN;
+		}
+    if (nHeight>200)
+		 {
+		nSubsidy = 1.1 * COIN;
+		}
     return nSubsidy + nFees;
 
 }
@@ -4484,10 +4491,37 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue)
 {
-    int64_t ret = blockValue * 2/3; //67%
+    int64_t ret = blockValue * 1/2; //50%
 	
-	if(nHeight>21000)
+	if(nHeight>400)
        ret = blockValue * 4/5; //80%
-
+    if(nHeight>1200)
+       ret = blockValue * 2/3; //67%
+    if(nHeight>3000)
+       ret = blockValue * 1/2; //50%
+    if(nHeight>5000)
+       ret = blockValue * 4/5; //80%
+    if(nHeight>9000)
+       ret = blockValue * 1/5; //20%
+    if(nHeight>13000)
+       ret = blockValue * 2/5; //40%
+    if(nHeight>20000)
+       ret = blockValue * 1/2; //50%
+    if(nHeight>25000)
+       ret = blockValue * 2/3; //67%
+    if(nHeight>30000)
+       ret = blockValue * 4/5; //80%
+    if(nHeight>33000)
+       ret = blockValue * 1/2; //50%
+    if(nHeight>41000)
+       ret = blockValue * 1/5; //20%
+    if(nHeight>43500)
+       ret = blockValue * 4/5; //80%
+    if(nHeight>46000)
+       ret = blockValue * 2/5; //40%
+    if(nHeight>80000)
+       ret = blockValue * 1/2; //50%
+    if(nHeight>99999)
+       ret = blockValue * 3/7; //43%   
     return ret;
 }
