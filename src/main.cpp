@@ -1360,14 +1360,15 @@ int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
 		 {
 		nSubsidy = 600000 * COIN;
 		}
-    if (nHeight>3)
+    if (nHeight<=200)
 		 {
 		nSubsidy = 0 * COIN;
 		}
-    if (nHeight>200)
+    if (nHeight<=99999)
 		 {
 		nSubsidy = 1.1 * COIN;
 		}
+
     return nSubsidy + nFees;
 
 }
@@ -4493,35 +4494,35 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue)
 {
     int64_t ret = blockValue * 1/2; //50%
 	
-	if(nHeight>400)
+	if(nHeight <= 400)
        ret = blockValue * 4/5; //80%
-    if(nHeight>1200)
+    else if(nHeight <= 1200)
        ret = blockValue * 2/3; //67%
-    if(nHeight>3000)
+    else if(nHeight <= 3000)
        ret = blockValue * 1/2; //50%
-    if(nHeight>5000)
+    else if(nHeight <= 5000)
        ret = blockValue * 4/5; //80%
-    if(nHeight>9000)
+    else if(nHeight <= 9000)
        ret = blockValue * 1/5; //20%
-    if(nHeight>13000)
+    else if(nHeight <= 13000)
        ret = blockValue * 2/5; //40%
-    if(nHeight>20000)
+    else if(nHeight <= 20000)
        ret = blockValue * 1/2; //50%
-    if(nHeight>25000)
+    else if(nHeight <= 25000)
        ret = blockValue * 2/3; //67%
-    if(nHeight>30000)
+    else if(nHeight <= 30000)
        ret = blockValue * 4/5; //80%
-    if(nHeight>33000)
+    else if(nHeight <= 33000)
        ret = blockValue * 1/2; //50%
-    if(nHeight>41000)
+    else if(nHeight <= 41000)
        ret = blockValue * 1/5; //20%
-    if(nHeight>43500)
+    else if(nHeight <= 43500)
        ret = blockValue * 4/5; //80%
-    if(nHeight>46000)
+    else if(nHeight <= 46000)
        ret = blockValue * 2/5; //40%
-    if(nHeight>80000)
+    else if(nHeight <= 80000)
        ret = blockValue * 1/2; //50%
-    if(nHeight>99999)
+    else if(nHeight <= 99999)
        ret = blockValue * 3/7; //43%   
     return ret;
 }
